@@ -10,7 +10,7 @@ UNAME_STR=`uname`
 
 if [ ! -d $DIR/yosys ]; then
 	echo "Checking out yosys..."
-	git clone https://github.com/cliffordwolf/yosys.git $DIR/yosys
+	git clone -b yosys-0.12 https://github.com/cliffordwolf/yosys.git $DIR/yosys
 else
 	cd $DIR/yosys
 	echo "Updating yosys..."
